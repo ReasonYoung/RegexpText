@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYl-op-6xK">
+                                <rect key="frame" x="29" y="101" width="192" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.79425679360458956" blue="0.80559853572217266" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtG-WD-HCe">
+                                <rect key="frame" x="229" y="99" width="63" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.87542659330731654" blue="0.82561513260363384" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="确定"/>
+                                <connections>
+                                    <action selector="validateTelBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azy-Mj-7jI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfq-p3-ihC">
+                                <rect key="frame" x="29" y="209" width="192" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.79425679360000001" blue="0.80559853569999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="353-p0-dYD">
+                                <rect key="frame" x="229" y="209" width="63" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.87542659330000006" blue="0.82561513259999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="确定"/>
+                                <connections>
+                                    <action selector="validateEmailBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfa-DM-zSf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户密码6-18位数字和字母组合" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-Bp-dLW">
+                                <rect key="frame" x="29" y="156" width="192" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.79425679360000001" blue="0.80559853569999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9um-7M-sXP">
+                                <rect key="frame" x="229" y="156" width="63" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.87542659330000006" blue="0.82561513259999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="确定"/>
+                                <connections>
+                                    <action selector="validatePwdBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9w-dk-UUE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入身份证号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aXe-sG-9ML">
+                                <rect key="frame" x="29" y="263" width="192" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.79425679360000001" blue="0.80559853569999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-r1-tKZ">
+                                <rect key="frame" x="229" y="261" width="63" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.87542659330000006" blue="0.82561513259999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="确定"/>
+                                <connections>
+                                    <action selector="validateIDBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfc-WO-rEb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailTF" destination="Vfq-p3-ihC" id="vXf-e3-0nY"/>
+                        <outlet property="identityCardTF" destination="aXe-sG-9ML" id="pNz-7z-CYd"/>
+                        <outlet property="passWordTF" destination="FF9-Bp-dLW" id="1wd-mT-uP9"/>
+                        <outlet property="phoneNumTF" destination="lYl-op-6xK" id="4Vl-EG-ElQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="429"/>
+        </scene>
+    </scenes>
+</document>
